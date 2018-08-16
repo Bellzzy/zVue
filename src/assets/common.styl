@@ -1,0 +1,164 @@
+$success = #1cbba7
+$primary = #1cbba7
+$danger = #ff4343
+$info = #d4e8ff
+
+btnset(bgc, bdc, c)
+	background: bgc
+	border-color: bdc
+	color: c
+	&:hover, &:active, &:visited, &:focus
+		background: darken(bgc, 10)
+		border-color: darken(bdc, 10)
+	&.is-disabled
+		background: darken(bgc, 10)
+		border-color: darken(bdc, 10)
+html, body
+	height: 100%
+	-webkit-text-size-adjust: none
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font: inherit
+	vertical-align: baseline
+	font-size: 12px !important
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+ol, ul, li
+	list-style: none
+blockquote, q
+	quotes: none
+blockquote:before, blockquote:after, q:before, q:after 
+	content: ''
+	content: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+.color_1cbba7 
+	color: #1cbba7
+.text_normal
+	font-size: 14px !important
+.text_big
+	font-size: 16px !important
+.bold
+	font-weight: bold
+	
+// el-button样式
+.el-button
+	padding: 2px 5px
+	&.el-button--medium
+		padding: 10px 20px
+	&.is-loading:before
+		background-color: rgba(255,255,255,0.55)
+.el-button--primary
+	btnset($primary, $primary, #fff)
+.el-button--success
+	btnset($success, $success, #fff)
+// .el-button--info
+// 	btnset($info, $info, $primary)
+
+// el-input
+.el-input__inner
+	height: 24px
+	line-height: 24px
+.el-input__icon
+	line-height: 24px
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner	
+	background-color: #ccc
+	border-color: #ccc
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after
+	border-color: #888
+// .el-select
+.el-select
+	.el-input__icon
+		width: 20px
+	.el-input__inner
+		padding-right: 20px
+.el-select-dropdown__item
+	height: 24px
+	line-height: 24px
+	span
+		line-height: 24px !important
+	
+// el-table
+.el-table__header th
+	background-color: #f5f5f5
+.el-table 
+	td, th
+		padding: 2px 0
+	.el-button
+		vertical-align: middle
+	
+// el-form
+.el-form-item
+	margin-bottom: 10px
+	.el-form-item__content, .el-form-item__label
+		line-height: 30px
+	.el-input, .el-select
+		width: 70%
+	.el-select .el-input
+		width: 100%
+	.el-form-item__error
+		top: 100%
+		transform: translateY(-30%)
+		left: 0
+.el-date-editor--daterange
+	width: 210px !important
+	.el-range__icon, .el-range-separator, .el-range__close-icon
+		line-height: 18px
+
+.el-date-editor .el-range-input
+		font-size: 12px
+// el-tree
+.el-tree-node__content
+	height: 30px
+	
+.xpt-text_ellipsis
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+#xpt-tooltip
+	position: fixed
+
+.cc-icon-data, 
+.cc-icon-home, 
+.cc-icon-cus, 
+.cc-icon-custask, 
+.cc-icon-ship
+	width: 15px
+	height: 15px
+	background-image: url('/static/icon.png')
+	background-size: cover
+	display: inline-block
+	margin: 0 9px 0 5px
+.cc-icon-data
+	background-position: 0 -15px
+.cc-icon-cus
+	background-position: 0 -30px
+.cc-icon-custask
+	background-position: 0 -45px
+.cc-icon-ship
+	background-position: 0 -60px
+
+h1
+	height: 40px
+	line-height: 40px
+	font-size: 16px !important
+	font-weight: bold	
+	
