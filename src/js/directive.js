@@ -92,7 +92,7 @@ Vue.directive('role', {
                 return true
             }
         }
-        el.parentNode.removeChild(el);
+        // el.parentNode.removeChild(el);
     }
 })
 

@@ -45,18 +45,10 @@ export default {
 			} else {
 				sessionStorage.removeItem('keyGen');
 			}
-			this.onLoading = !this.onLoading;
-			this.axios.post('/user/usercontroller/login', this.login).then(res => {
-				if(200 == res.code) {
-					sessionStorage.setItem('token', res.data)
-					this.$router.push({path:'/main', query: {link: 'home'}})
-				} else {
-					this.$message.error(res.msg)
-				}
-				this.onLoading = false;
-			}).catch(() => {
-				this.onLoading = false;
-			})
+			this.$router.push({path:'/main', query: {link: 'home'}})
+			
+			// TODO
+			
 			return false;
 			
 		}

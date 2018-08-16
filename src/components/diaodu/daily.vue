@@ -198,8 +198,8 @@
 			}
 		},
 		mounted() {
-			this.getData();
-			this.getCount()
+			// this.getData();
+			// this.getCount()
 		},
 		watch: {
 			checkList(n) {

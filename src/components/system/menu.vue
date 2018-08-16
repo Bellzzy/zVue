@@ -157,7 +157,7 @@ export default {
 	},
 	mounted() {
 		this.col2_width = (this.$el.clientWidth * 0.8) + 'px';
-		this.getData();
+		// this.getData();
 		this.$root.events.$on('updateMenu', this.getData)
 	},
 	beforeDestroy() {
